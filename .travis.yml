@@ -1,5 +1,4 @@
 language: ruby
-rvm: system
 dist: trusty
 
 script:
