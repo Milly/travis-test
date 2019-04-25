@@ -4,4 +4,6 @@ dist: trusty
 
 script:
   - echo "${PATH//:/$'\n'}"
+  - export PATH="$(echo -n "$PATH"|tr ':' $'\n'|grep -Ev 'pyenv|phpenv|clang'|tr $'\n' ':')"
+  - echo "${PATH//:/$'\n'}"
   - true
