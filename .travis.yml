@@ -3,4 +3,5 @@ rvm: default
 dist: trusty
 
 script:
+  - echo "${PATH//:/$'\n'}"
   - true
