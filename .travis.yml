@@ -1,5 +1,5 @@
 language: ruby
-rvm: system
+rvm: default
 dist: trusty
 
 script:
